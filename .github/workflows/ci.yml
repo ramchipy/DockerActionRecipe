@@ -4,8 +4,9 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/chechkout@v4.1.1
+      - uses: actions/checkout@v4.1.1
       - name: Run my own container action
+        id: my-action
         uses: ./
         with:
           who-to-greet: '@ramchipy'
