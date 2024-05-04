@@ -4,7 +4,7 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v4.1.4
       - name: Run my own container action
         id: my-action
         uses: ./
